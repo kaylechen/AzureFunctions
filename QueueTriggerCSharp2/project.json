@@ -2,10 +2,7 @@
   "frameworks": {
     "net46":{
       "dependencies": {
-        "Microsoft.WindowsAzure.Storage": "7.2.0",
-        "System.Data.SqlClient": "4.1.0",
-        "Newtonsoft.Json": "6.0.6",
-        "Newtonsoft.Json.Linq" : ""
+        "Microsoft.WindowsAzure.Storage": "7.2.0"
       }
     }
    }
