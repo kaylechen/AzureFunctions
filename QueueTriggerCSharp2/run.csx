@@ -19,12 +19,6 @@ public static void Run(string myQueueItem, TraceWriter log)
 
         MainConnection.ConnectionString = "Data Source=kayledemo.database.windows.net;Initial Catalog=DEMO;Persist Security Info=True;User ID=vmadmin;Password=P@ssw0rd123";
 
-        //JObject restoredObject = JsonConvert.DeserializeObject<JObject>(myQueueItem);  //將序列化的資料還原成JSON
-        //string Guid = restoredObject["GUID"].ToString();
-        //string TenantID = restoredObject["TenantID"].ToString();
-        //string JobMome = restoredObject["JobMome"].ToString();
-
-
         MainCommand.Connection = MainConnection;
         MainCommand.CommandText = myQueueItem;
         MainConnection.Open();
@@ -36,7 +30,7 @@ public static void Run(string myQueueItem, TraceWriter log)
     }
     catch(Exception e)
     {
-        log.Info("Exception:" + e);
+        log.Info("KK Exception:" + e);
     }
     
 
