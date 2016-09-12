@@ -1,3 +1,5 @@
+#r "Microsoft.WindowsAzure.Storage"
+
 using System.Net;
 using Newtonsoft.Json.Linq;
 using System.Data.SqlClient;
