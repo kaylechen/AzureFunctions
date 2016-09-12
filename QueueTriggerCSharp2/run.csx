@@ -1,6 +1,9 @@
 #r "Microsoft.WindowsAzure.Storage"
+#r "System.Data.SqlClient"
+
 
 using System.Net;
+
 
 public static void Run(string myQueueItem, TraceWriter log)
 {
