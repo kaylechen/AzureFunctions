@@ -1,9 +1,11 @@
 #r "Microsoft.WindowsAzure.Storage"
-#r "Newtonsoft.Json.Linq"
-#r "Newtonsoft.Json"
-#r "System.Data.SqlClient"
 
 using System.Net;
+using System.Data.SqlClient;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+
+
 public static void Run(string myQueueItem, TraceWriter log)
 {
     try
