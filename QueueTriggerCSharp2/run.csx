@@ -10,16 +10,16 @@ public static void Run(string myQueueItem, TraceWriter log)
 
         //log.Info("******************Start****************");
 
-        //SqlConnection MainConnection = new MainConnection();
-        //SqlCommand MainCommand = new MainCommand();
+        SqlConnection MainConnection = new MainConnection();
+        SqlCommand MainCommand = new MainCommand();
 
 
-        //MainConnection.ConnectionString = "Data Source=kayledemo.database.windows.net;Initial Catalog=DEMO;Persist Security Info=True;User ID=vmadmin;Password=P@ssw0rd123";
+        MainConnection.ConnectionString = "Data Source=kayledemo.database.windows.net;Initial Catalog=DEMO;Persist Security Info=True;User ID=vmadmin;Password=P@ssw0rd123";
 
-        //MainCommand.Connection = MainConnection;
-        //MainCommand.CommandText = myQueueItem;
-        //MainConnection.Open();
-        //MainCommand.ExecuteNonQuery();
+        MainCommand.Connection = MainConnection;
+        MainCommand.CommandText = myQueueItem;
+        MainConnection.Open();
+        MainCommand.ExecuteNonQuery();
 
 
 
