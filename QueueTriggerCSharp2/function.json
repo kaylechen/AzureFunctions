@@ -2,7 +2,7 @@
     "disabled": false,
     "bindings": [
         {
-            "name": "myQueue",
+            "name": "myqueue",
             "queueName": "functionqueue",
             "connection":"",
             "type": "queueTrigger",
