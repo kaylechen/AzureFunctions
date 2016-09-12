@@ -12,6 +12,11 @@ public static void Run(string myQueueItem, TraceWriter log)
         log.Info($"Queue message: {myQueueItem}");
 
         log.Info("******************Start****************");
+
+        SqlConnection MainConnection = new MainConnection();
+        SqlCommand MainCommand = new MainCommand();
+
+
         MainConnection.ConnectionString = "Data Source=kayledemo.database.windows.net;Initial Catalog=DEMO;Persist Security Info=True;User ID=vmadmin;Password=P@ssw0rd123";
 
         //JObject restoredObject = JsonConvert.DeserializeObject<JObject>(myQueueItem);  //將序列化的資料還原成JSON
