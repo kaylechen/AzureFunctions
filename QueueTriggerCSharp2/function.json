@@ -1,0 +1,12 @@
+{
+    "disabled": false,
+    "bindings": [
+        {
+            "name": "myQueue",
+            "queueName": "functionqueue",
+            "connection":"",
+            "type": "queueTrigger",
+            "direction": "in"
+        }
+    ]
+}
