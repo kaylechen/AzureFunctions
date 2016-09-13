@@ -15,8 +15,8 @@ public static void Run(string myQueueItem, TraceWriter log)
     //string Guid = restoredObject["GUID"].ToString();
     //string TenantID = restoredObject["TenantID"].ToString();
     //string JobMome = restoredObject["JobMome"].ToString();
-    log.Info($"myQueueItem:{myQueueItem}");
-    //log.Info($"Guid:{Guid}");
+    //log.Info($"myQueueItem:{myQueueItem}");
+    log.Info($"Guid:{Guid}");
     //log.Info($"TenantID:{TenantID}");
     //log.Info($"JobMome:{JobMome}");
 
