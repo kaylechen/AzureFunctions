@@ -6,7 +6,7 @@ using System;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using Newtonsoft.json;
+//using Newtonsoft.json;
 
 
 public static void Run(string myQueueItem, TraceWriter log)
